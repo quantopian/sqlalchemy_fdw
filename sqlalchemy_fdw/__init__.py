@@ -26,7 +26,7 @@ class ForeignTable(Table):
         mytable = ForeignTable("mytable", metadata,
                                Column('id', Integer),
                                Column('name', Unicode),
-                               pgfdw_server='myserver)
+                               pgfdw_server='myserver')
 
     You can then use it like any table, except:
         - only select statements are supported
